@@ -38,6 +38,7 @@ img태그처럼 태그가 태그의 이름만으로는 정보가 부족할때는
 -->
 ```
 <hr/><hr/>
+
 # [css 공부 부분]
 
 **css 강의 영상 사이트: <https://www.youtube.com/watch?v=Ok0bBJPtgJI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B&index=1>**
@@ -88,7 +89,7 @@ border:5px red solid; 이렇게 바꿔서 적을수 있다.
 예를들어 margin:0px; 을 적으면 두 테두리의 간격없이 딱붙어버린다.
 장사를 하면 마진이 남는다. 이를 이용해서 margin 속성을 이해하자.
 
-**여백 관련 속성 총정리: ■는 테두리**
+여백 관련 속성 총정리: ■는 테두리
 ■■■■■■■ border ■■■■■■■
 ■       padding      ■
 ■	주내용       ■
