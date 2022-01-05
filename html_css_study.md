@@ -81,6 +81,7 @@ border-color:red;
 border-style: solid; 이거를
 border:5px red solid; 이렇게 바꿔서 적을수 있다.
 참고로 solid는 점선 이런게아닌 단선을 의미한다.
+border-bottom 으로 사용하면 테두리가 사각형이 아닌, 밑부분에 선으로만 테두리가 만들어진다. 비슷한 방식으로 bottom 대신 right 등등도 사용 가능하다.
 
 효과 부분에 padding:2px 이렇게 적어주면 2픽셀만큼 테두리와 글자 사이에 여백 테두리가 생긴다.
 간단하게 padding 속성은 우리가 겨울에 입는 패딩처럼 여백 공간을 만들어준다 라고 이해하자.
