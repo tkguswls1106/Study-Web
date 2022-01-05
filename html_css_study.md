@@ -1,4 +1,4 @@
-`
+```
 # [html 공부 부분]
 
 **html 강의 영상 사이트: <https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb>**
@@ -136,4 +136,4 @@ border:5px red solid; 이렇게 바꿔서 적을수 있다.
 ■       주내용       ■
 ■       padding      ■
 ■■■■■■■ border ■■■■■■■
-`
+```
