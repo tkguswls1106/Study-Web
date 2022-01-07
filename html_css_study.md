@@ -109,7 +109,7 @@ div 태그는 기본적으로 block level element 이기 때문에 화면 전체
 그것이 바로 <span></span> 태그이다.
 
 예를들어 바디 부분에 div 엄마 태그로 NAVIGATION과 ARTICLE을 묶고 난뒤에 헤드 부분의 스타일 태그 부분에서
-grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 컬럼인 NAVIGATION은 150px 크기로 변동없이 유지되고,
+display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 컬럼인 NAVIGATION은 150px 크기로 변동없이 유지되고,
 두번째 컬럼인 ARTICLE은 1fr이므로 사용자가  홈페이지 크기를 늘렸다 줄였다해도 그 최대 크기에 맞춰서 변동성을 가지고 크기가 줄었다 커졌다 한다.
 만약에 grid-template-columns: 2fr 1fr; 로 적게되면, NAVIGATION과 ARTICLE이 2:1 비율로 늘었다 줄었다하며 크기가 변동성을 가지게 된다.
 ```
