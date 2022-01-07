@@ -22,7 +22,10 @@
       border-right:3px solid gray;
       width:100px;
       margin:0;
-      padding:20px;
+      padding-left: 55px;
+      /*
+      패딩값을 왼쪽으로부터 55px 떨어지게 만듦.
+      */
     }
 
     body {
@@ -32,29 +35,49 @@
     .hj {
       color:blue;
     }
+
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+
+    #grid ol{
+      padding-left: 40px;
+    }
+    /*
+    grid div 안의 ol 태그에 대하여만 간섭하게됨.
+    */
+
+    .didi {
+      padding-left: 35px;
+    }
     </style>
 
   </head>
 
   <body>
-    <ol>
-      <li>hello web</li>
-      <li>hi this is <strong>"<u>important</u>"</strong></li>
-    </ol>
+  <div id = "grid">
+      <ol>
+        <li>hello web</li>
+        <li>hi this is <strong>"<u>important</u>"</strong></li>
+      </ol>
+    <div class = "didi">
+      <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification" class = "sa hj">Hypertext is</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.<br>
+        <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification">Hello world</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.
+        <img src = "prog.jpg" width = "100%"></p>
+    </div>
+  </div>
 
-    <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification" class = "sa hj">Hypertext is</a> simply dummy text of the printing and typesetting industry.
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-     when an unknown printer took a galley of type and scrambled it to make a type
-     specimen book. It has survived not only five centuries, <br>but also the leap
-     into electronic typesetting, remaining essentially unchanged.<br>
-     <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification">Hello world</a> simply dummy text of the printing and typesetting industry.
-     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-      when an unknown printer took a galley of type and scrambled it to make a type
-      specimen book. It has survived not only five centuries, <br>but also the leap
-      into electronic typesetting, remaining essentially unchanged.
-    <img src = "prog.jpg" width = "100%">
-    </p>0It was
-     popularised in the 1960s with the release of Letraset sheets containing
+
+     It was popularised in the 1960s with the release of Letraset sheets containing
      Lorem Ipsum passages, and more recently with desktop publishing software like
      Aldus PageMaker including versions of Lorem Ipsum.
      </body>
