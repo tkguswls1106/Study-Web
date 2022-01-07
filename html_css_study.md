@@ -117,6 +117,25 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 
 미디어 쿼리는 여러가지 화면의 특성들에 따라서 어떠한 조건을 만족할 때에만 이 css의 내용이 동작하게 하는 것이다.
 
-그리드는 반대로 display: grid가 아닌, display: block으로 적용시키면, 원래가 세로였기때문에 세로 나열된다.
+스타일 태그에서
+#grid{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+    }
+코드를 적어, 바디 태그에 div 두묶음을 묶어놓는다.
+그리고 스타일 태그 안에
+@media(max-width:800px){
+      #grid{
+        display: block;
+      }
+이렇게 미디어 쿼리 코드를 작성한다.
+여기서 헷갈릴 수 있는게, block의 정의가 한 블럭 자체를 잡아먹기때문에 block으로 미디어 쿼리로
+조건부 코드를 걸어주고 조건에 부합하게 되어도 그대로 두묶음이 나란히 가로로 나열되어야하는것 아니냐는
+생각이 들수 있는데, 이것은 틀린 말이다.
+그 이유는 태그가 1개만들어있는걸 display block으로 건드리면 방금 말이 틀리지않고 가로로 그대로 나열된다는 말이 옳은말이되겠지만,
+위의 예제는 그리드로 두가지 태그가 들어있기때문에 다시 미디어 쿼리에서 display block으로 건드리게 되면
+그리드로 묶기전인 원래 디폴트(default)인 세로정렬(vertical) block으로 적용시켜야 한다는 것이다.
+쉽게 이해해보자면, 그리드는 반대로 display: grid가 아닌, display: block으로 적용시키면, 원래가 세로였기때문에 가로가 아닌 세로 나열된다.
+즉, display grid로 묶어뒀던걸 미디어 쿼리로 display block으로 풀어줬으니 디폴트인 세로로 돌아간다.
 
 ```
