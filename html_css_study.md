@@ -117,4 +117,6 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 
 미디어 쿼리는 여러가지 화면의 특성들에 따라서 어떠한 조건을 만족할 때에만 이 css의 내용이 동작하게 하는 것이다.
 
+그리드는 반대로 display: grid가 아닌, display: block으로 적용시키면, 원래가 세로였기때문에 세로 나열된다.
+
 ```
