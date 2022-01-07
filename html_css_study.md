@@ -115,4 +115,6 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 두번째 컬럼인 ARTICLE은 1fr이므로 사용자가  홈페이지 크기를 늘렸다 줄였다해도 그 최대 크기에 맞춰서 변동성을 가지고 크기가 줄었다 커졌다 한다.
 만약에 grid-template-columns: 2fr 1fr; 로 적게되면, NAVIGATION과 ARTICLE이 2:1 비율로 늘었다 줄었다하며 크기가 변동성을 가지게 된다.
 
+미디어 쿼리는 여러가지 화면의 특성들에 따라서 어떠한 조건을 만족할 때에만 이 css의 내용이 동작하게 하는 것이다.
+
 ```
