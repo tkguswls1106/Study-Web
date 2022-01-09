@@ -138,4 +138,6 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 쉽게 이해해보자면, 그리드는 반대로 display: grid가 아닌, display: block으로 적용시키면, 원래가 세로였기때문에 가로가 아닌 세로 나열된다.
 즉, display grid로 묶어뒀던걸 미디어 쿼리로 display block으로 풀어줬으니 디폴트인 세로로 돌아간다.
 
+head 태그 안에서 style 태그를 따로 파일로 빼서 간단하게 한문장으로 다른 위치에 있는 style 태그를 불러와서 실행시키고 싶다면,
+link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식으로 "style.css"부분만 이름 변경해서 적으면 된다.
 ```
