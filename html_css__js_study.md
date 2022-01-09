@@ -141,3 +141,32 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 head 태그 안에서 style 태그를 따로 파일로 빼서 간단하게 한문장으로 다른 위치에 있는 style 태그를 불러와서 실행시키고 싶다면,
 link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식으로 "style.css"부분만 이름 변경해서 적으면 된다.
 ```
+<hr/><hr/>
+
+# [javascript 공부 부분]
+
+**javascript 강의 영상 사이트: <https://www.youtube.com/watch?v=dPRtcRwKo-Y&list=PLuHgQVnccGMBB348PWRN0fREzYcYgFybf>**
+```
+한 번 화면에 출력되면 언제나 그 모습 그대로이기 때문에 html은 정적이다. 하지만 게임 같은 여러 프로그램들은 사용자의 조작에 반응해서
+프로그램이 반응한다. 이처럼 웹페이지도 동적으로 사용자와 상호작용 할 수 있게 한 기술이 javascript 이다.
+즉, 사이트 제작은 html, 디자인은 css, 상호작용은 javascript 인 것이다.
+
+참고로 JavaScript랑 JS랑 같은 말이다.
+
+예를들어 <body style = " "> 태그로 상호작용시 일어날 디자인 변경의 css 코드를 적어주고,
+그 body 태그 안에 관련 javascript 코드를 적어주면, 해당 상호작용에 따라 css 코드에 적힌대로 디자인이 변경된다.
+
+css는 style 태그로 head 태그 안에 넣어주는 반면에, javascript는 body 태그 안에 넣어준다.
+물론 예외로, <body style = " "> 같이 body 태그에 같이 적어주는 경우도 있다.
+
+body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣어준다.
+
+버튼 만드는 태그는 input 이다.
+그 안에서 type = "button" 을 하면 버튼 모양이 되고, value = "글씨쓰기" 를 하면 그 버튼 안에 글씨를 쓸수 있게된다.
+그리고 onclick = " " 를 사용하면 그안에는 javascript 이벤트(사건) 문법 코드를 적어야한다.
+
+참고로 onclick 온클릭이지 onclick 원클릭이 아니니 헷갈리지 말자! on 관련된 코드가 많다. 예를들어 onclick, onchange, onkeydown 등등이 있다.
+
+사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
+
+```
