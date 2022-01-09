@@ -1,0 +1,60 @@
+/* style 태그를 제외한 그 안의 순수한 css 코드만 복사해온다 */
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+h1 {
+  font-size:45px;
+  text-align:center;
+  border-bottom:3px solid gray;
+  margin:0;
+  padding:15px;
+}
+
+ol {
+  border-right:3px solid gray;
+  width:100px;
+  margin:0;
+  padding-left: 55px;
+  /*
+  패딩값을 왼쪽으로부터 55px 떨어지게 만듦.
+  */
+}
+
+body {
+  margin:0;
+}
+
+.hj {
+  color:blue;
+}
+
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+#grid ol{
+  padding-left: 40px;
+}
+/*
+grid div 안의 ol 태그에 대하여만 간섭하게됨.
+*/
+
+.didi {
+  padding-left: 35px;
+}
+
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol {
+    border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
