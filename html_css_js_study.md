@@ -169,4 +169,8 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 
 사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
 
+웹사이트 검사에서 Elements 오른쪽에 있는 Console 을 클릭하면 거기서 바로 javascript 코드로 웹페이지를 제어할 수 있다.
+
+상관은 없지만 될수있으면 변수 선언할때 앞에 var 적어주자. 예를 들어 var name = 'shj';
+
 ```
