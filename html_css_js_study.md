@@ -153,6 +153,7 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 
 참고로 JavaScript랑 JS랑 같은 말이다.
 
+/*
 예를들어 <body style = " "> 태그로 상호작용시 일어날 디자인 변경의 css 코드를 적어주고,
 그 body 태그 안에 관련 javascript 코드를 적어주면, 해당 상호작용에 따라 css 코드에 적힌대로 디자인이 변경된다.
 */ !!!!이거 아마 틀릴수도 있는 정보라 주석처리 식으로 다시 수정해놨으니까 주의하기!!!!
