@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WEB1 - html</title>
+    <meta charset="utf-8">
+    <h1>HTML이란 무엇인가</h1>
+    <!-- 따로 파일로 불러오려고 style 태그 부분 지웠음 -->
+    <link rel="stylesheet" href="style.css">
+
+  <body>
+    <input type = "button" value = "night" onclick = "
+    alert('be black');
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    ">  <!-- 배경: 검은색, 글씨 흰색 / 'body'로 body 선택자(Selector)를 지정했다. -->
+    <input type = "button" value = "day" onclick = "
+    alert('be white');
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    ">
+    </body>
+    <!-- 아마도 ; 이거 빼고 사용해도 상관없는듯 하다. -->
+
+  <div id = "grid">
+      <ol>
+        <li>hello web</li>
+        <li>hi this is <strong>"<u>important</u>"</strong></li>
+      </ol>
+    <div class = "didi">
+      <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification" class = "sa hj">Hypertext is</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.<br>
+        <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification">Hello world</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.
+        <img src = "prog.jpg" width = "100%"></p>
+    </div>
+  </div>
+
+     It was popularised in the 1960s with the release of Letraset sheets containing
+     Lorem Ipsum passages, and more recently with desktop publishing software like
+     Aldus PageMaker including versions of Lorem Ipsum.
+     </body>
+</html>
