@@ -155,6 +155,7 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 
 예를들어 <body style = " "> 태그로 상호작용시 일어날 디자인 변경의 css 코드를 적어주고,
 그 body 태그 안에 관련 javascript 코드를 적어주면, 해당 상호작용에 따라 css 코드에 적힌대로 디자인이 변경된다.
+*/ !!!!이거 아마 틀릴수도 있는 정보라 주석처리 식으로 다시 수정해놨으니까 주의하기!!!!
 
 css는 style 태그로 head 태그 안에 넣어주는 반면에, javascript는 body 태그 안에 넣어준다.
 물론 예외로, <body style = " "> 같이 body 태그에 같이 적어주는 경우도 있다.
@@ -172,5 +173,8 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 웹사이트 검사에서 Elements 오른쪽에 있는 Console 을 클릭하면 거기서 바로 javascript 코드로 웹페이지를 제어할 수 있다.
 
 상관은 없지만 될수있으면 변수 선언할때 앞에 var 적어주자. 예를 들어 var name = 'shj';
+
+<body style = "background-color:black; color white;"> </body>
+이걸 적어주면 웹페이지 배경색은 검은색이 되고, 글씨는 하얀색이 된다.
 
 ```
