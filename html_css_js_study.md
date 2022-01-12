@@ -188,4 +188,23 @@ document.write("1<br>"); 이렇게쓰면 1쓰고 엔터된다. document.write('1
 
 <script> </script> 태그안에 javascript 코드를 쓰며, 그 안에는 if 조건문을 사용 가능하다.
 
+리펙토링 중복의 제거로 onclick에서 자기 자신을 가리킬때는 this를 쓰면 된다.
+예를들어
+    <input id="night_day" type="button" value="night" onclick="
+    if (document.querySelector('#night_day').value === 'night')
+    {
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day').value = 'day'
+    }
+이코드면 input id="night_day" type="button" 이건 어차피 자기 자신을 가리키기때문에 id를 지워주고, 관련 코드를 this로 바꿔주면
+<input type="button" value="night" onclick="
+    if (this.value === 'night')
+    {
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      this.value = 'day'
+    }
+이렇게 중복제거로 코드 사용이 가능하다.
+
 ```
