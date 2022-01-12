@@ -178,4 +178,14 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 <body style = "background-color:black; color white;"> </body>
 이걸 적어주면 웹페이지 배경색은 검은색이 되고, 글씨는 하얀색이 된다.
 
+true와 false를 묶어서 Boolean(불리언)이라고 부른다.
+
+javascript에서는 == 말고 ===로 쓰자.
+
+<h1> 1<2 </h1> 이걸 나타내고 싶으면 <h1> 1&lt2 </h1> 이렇게 써야한다.
+
+document.write("1<br>"); 이렇게쓰면 1쓰고 엔터된다. document.write('1<br>');도 되는듯 하다.
+
+<script> </script> 태그안에 javascript 코드를 쓰며, 그 안에는 if 조건문을 사용 가능하다.
+
 ```
