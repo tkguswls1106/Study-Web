@@ -1,23 +1,39 @@
 <!doctype html>
 <html>
   <head>
-    <title>WEB1 - html</title>
+    <title>js_practice</title>
     <meta charset="utf-8">
     <h1>HTML이란 무엇인가</h1>
     <!-- 따로 파일로 불러오려고 style 태그 부분 지웠음 -->
     <link rel="stylesheet" href="style.css">
 
   <body>
-    <input type = "button" value = "night" onclick = "
+    <input type = "button" value = "다크모드" onclick = "
     alert('be black');
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
     ">  <!-- 배경: 검은색, 글씨 흰색 / 'body'로 body 선택자(Selector)를 지정했다. -->
-    <input type = "button" value = "day" onclick = "
+    <input type = "button" value = "낮모드" onclick = "
     alert('be white');
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';
     ">
+
+    <input id="night_day" type="button" value="night" onclick="
+    if (document.querySelector('#night_day').value === 'night')
+    {
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#night_day').value = 'day'
+    }
+    else
+    {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'night'
+    }
+    ">
+
     </body>
     <!-- 아마도 ; 이거 빼고 사용해도 상관없는듯 하다. -->
 
