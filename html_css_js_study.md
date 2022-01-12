@@ -161,7 +161,7 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 css는 style 태그로 head 태그 안에 넣어주는 반면에, javascript는 body 태그 안에 넣어준다.
 물론 예외로, <body style = " "> 같이 body 태그에 같이 적어주는 경우도 있다.
 
-body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣어준다.
+body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣어준다. 그 안에는 if 조건문을 사용 가능하다.
 
 버튼 만드는 태그는 input 이다.
 그 안에서 type = "button" 을 하면 버튼 모양이 되고, value = "글씨쓰기" 를 하면 그 버튼 안에 글씨를 쓸수 있게된다.
@@ -185,8 +185,6 @@ javascript에서는 == 말고 ===로 쓰자.
 <h1> 1<2 </h1> 이걸 나타내고 싶으면 <h1> 1&lt2 </h1> 이렇게 써야한다.
 
 document.write("1<br>"); 이렇게쓰면 1쓰고 엔터된다. document.write('1<br>');도 되는듯 하다.
-
-<script> </script> 태그안에 javascript 코드를 쓰며, 그 안에는 if 조건문을 사용 가능하다.
 
 리펙토링 중복의 제거로 onclick에서 자기 자신을 가리킬때는 this를 쓰면 된다.
 예를들어
