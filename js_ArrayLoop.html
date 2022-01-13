@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>array + loop</title>
+  </head>
+  <body>
+    <h1> array & loop (배열과 반복문의 조합)</h1>
+    <script>
+      var coworkers = ['egoing', 'leezche', 'duru', 'taeho', 'shj'];
+    </script>
+
+    <h2>Co workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < coworkers.length)
+        {
+          document.write('<li><a href = "https://www.naver.com/">' + coworkers[i] + '</a></li>');
+          i++;
+        }
+      </script>
+    </ul>
+  </body>
+</html>
