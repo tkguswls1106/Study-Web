@@ -41,14 +41,30 @@
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
       this.value = 'day'
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length)
+      {
+        alist[i].style.color = 'powderblue';
+        i++;
+      }
     }
     else
     {
       target.style.backgroundColor = 'white';
       target.style.color = 'black';
       this.value = 'night'
+
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while(i < alist.length)
+      {
+        alist[i].style.color = 'red';
+        i++;
+      }
     }
-    ">  <!-- 여러가지 중복 제거 부분 -->
+    ">  <!-- 여러가지 중복 제거 부분이며, 야간모드시 링크된 부분이 더 잘보이게 해놓았다. 주간모드도 코딩해놨다. -->
 
     </body>
     <!-- 아마도 ; 이거 빼고 사용해도 상관없는듯 하다. -->
