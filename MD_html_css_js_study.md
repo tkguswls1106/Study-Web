@@ -186,7 +186,7 @@ javascript에서는 == 말고 ===로 쓰자.
 
 document.write("1<br>"); 이렇게쓰면 1쓰고 엔터된다. document.write('1<br>');도 되는듯 하다.
 
-리펙토링 중복의 제거로 onclick에서 자기 자신을 가리킬때는 this를 쓰면 된다.
+리펙토링(동작하는 내용은 같지만 코드를 효율적으로 하는것을 의미한다) 중복의 제거로 onclick에서 자기 자신을 가리킬때는 this를 쓰면 된다.
 예를들어
     <input id="night_day" type="button" value="night" onclick="
     if (document.querySelector('#night_day').value === 'night')
@@ -214,5 +214,18 @@ console.log(값) 이것은 웹페이지의 검사의 Console 창에서 해당 �
 
 웹페이지의 검사의 Console 창에서 입력한 코드들은 임시적인 반영이라 실제로는 그 결과가 저장되지않는다.
 표면적으로 임시적인 결과를 보여주는 것뿐이고, 실제로 적용하여 반영시키려면 콘솔코드가 아닌, 실제 코드를 바꿔야한다.
+
+javascript로 함수를 만들고 싶다면, body 태그던 head 태그던 상관없이 그 안에 script 태그를 만들고 그 안에 function 함수이름(매개변수 예를들어 self){} 이렇게 선언한다.
+
+변수 선언을 num1, num2 처럼 숫자를 포함시켜도 된다.
+
+<script>
+   function sum(num1, num2)
+   {
+       document.write(num1 + num2 + '<br>');
+   }
+   sum(3,5);
+</script>
+예를 들어 이런 코드라면, 3,5는 인자(argument) 라고 부르고, num1,num2는 매개변수(parameter)라고 한다.
 
 ```
