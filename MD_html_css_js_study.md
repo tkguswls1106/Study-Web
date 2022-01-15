@@ -228,4 +228,6 @@ javascript로 함수를 만들고 싶다면, body 태그던 head 태그던 상�
 </script>
 예를 들어 이런 코드라면, 3,5는 인자(argument) 라고 부르고, num1,num2는 매개변수(parameter)라고 한다.
 
+참고로 위처럼 document.write() 안에 태그를 넣을순 있지만, 그 태그를 ' ' 안에 넣어줘야한다.
+
 ```
