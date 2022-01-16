@@ -230,4 +230,20 @@ javascript로 함수를 만들고 싶다면, body 태그던 head 태그던 상�
 
 참고로 위처럼 document.write() 안에 태그를 넣을순 있지만, 그 태그를 ' ' 안에 넣어줘야한다.
 
+객체는 폴더(리렉토리)라는 관점으로 봐도 무방하다.
+
+객체에 속해있는 함수는 함수라고 하지않고 메소드(method)라고 부른다.
+예를들어 document.querySelector('body')에서 document는 객체이고, querySelector('body')가 메소드이다.
+
+배열은 순서대로 정보를 저장해서 집어넣는 폴더라면,
+반면에 객체는 순서없이 정보를 저장해서 집어넣는 폴더이다. 대신, 그 정보에 대한 이름과 함께 저장한다.
+그러면 그 이름으로 다시 정보를 꺼내올수있기 때문이다. 객체가 바로 이러한 이름이 있는 정리정돈 상자이다.
+
+배열은 대괄호[]를, 객체는 중괄호{}를 사용한다.
+
+coworkers["data scientist"] = "taeho";
+document.write("data scientist : " + coworkers["data scientist"] + "<br>");
+이처럼 객체에서 띄어쓰기 이름(예를들어 data scientist)을 사용하고 싶을때에는 coworkers["data scientist"] 이렇게 사용한다.
+coworkers.data scientist 이렇게는 사용이 불가능하다는 것이다.
+
 ```
