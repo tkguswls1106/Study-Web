@@ -4,38 +4,43 @@
     <title>js_practice</title>
     <meta charset="utf-8">
     <script>
-    function nightDayhandler(self) {
-    var target = document.querySelector('body');
-    if (self.value === 'night')
+    function LinkSetColor(color)
     {
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      self.value = 'day'
-
       var alist = document.querySelectorAll('a');
       var i = 0;
       while(i < alist.length)
       {
-        alist[i].style.color = 'powderblue';
+        alist[i].style.color = color;
         i++;
       }
     }
-    else
+    function BodySetColor(color)
     {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      self.value = 'night'
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length)
-      {
-        alist[i].style.color = 'red';
-        i++;
-      }
+      document.querySelector('body').style.color = color;
     }
+    function BodySetBackgroundColor(color)
+    {
+      document.querySelector('body').style.backgroundColor = color;
+    }
+    function nightDayhandler(self)
+    {
+      var target = document.querySelector('body');
+      if (self.value === 'night')
+      {
+        Body.setBackgroundColor('black');
+        Body.setColor('white');
+        self.value = 'day';
+        Links.setColor('powderblue');
+      }
+      else
+      {
+        Body.setBackgroundColor('white');
+        Body.setColor('black');
+        self.value = 'night';
+        Links.setColor('red');
+      }
 
-  }
+    }
     </script>
         <h1>HTML이란 무엇인가</h1>
     <!-- 따로 파일로 불러오려고 style 태그 부분 지웠음 -->
