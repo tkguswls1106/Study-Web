@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <title>js_practice</title>
+    <meta charset="utf-8">
+    <script src = "script.js"></script>
+    <!-- 따로 파일로 불러오려고 script 태그 속부분만 지우고 기존의 script 태그 코드를 약간 수정함. -->
+    <h1>HTML이란 무엇인가</h1>
+    <link rel="stylesheet" href="style.css">
+    <!-- 따로 파일로 불러오려고 style 태그와 속부분까지 모두 지웠음. 대신 링크 태그로 따로 링크 걸어줌. -->
+
+  <body>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayhandler(this)
+    ">
+    <!-- 사실 this로 자기 자신을 이미 가리켰기때문에 id="night_day" 이부분은 생략해도 무방하다. -->
+
+    <input type="button" value="night" onclick="
+    nightDayhandler(this)
+    ">
+
+    </body>
+
+
+  <div id = "grid">
+      <ol>
+        <li>hello web</li>
+        <li>hi this is <strong>"<u>important</u>"</strong></li>
+      </ol>
+    <div class = "didi">
+      <p><a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification" class = "sa hj">Hypertext is</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.<br>
+        <a href="https://www.w3.org/TR/2011/WD-html5-20110405/" target = "_blank" title = "html specification">Hello world</a> simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        when an unknown printer took a galley of type and scrambled it to make a type
+        specimen book. It has survived not only five centuries, <br>but also the leap
+        into electronic typesetting, remaining essentially unchanged.
+        <img src = "prog.jpg" width = "100%"></p>
+    </div>
+  </div>
+
+     It was popularised in the 1960s with the release of Letraset sheets containing
+     Lorem Ipsum passages, and more recently with desktop publishing software like
+     Aldus PageMaker including versions of Lorem Ipsum.
+     </body>
+</html>
