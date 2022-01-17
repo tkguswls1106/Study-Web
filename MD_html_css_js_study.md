@@ -249,4 +249,8 @@ coworkers.data scientist 이렇게는 사용이 불가능하다는 것이다.
 
 객체에 메소드 안에는 함수를 넣을수도 있다.
 
+css의 style 태그와 javacript의 script 태그를 따로 파일로 빼서 링크를 걸어줄때는 둘이 차이점이 있다.
+css의 style 태그의 경우에는, 따로 파일로 불러오려고 style 태그와 속부분까지 모두 지우고, 대신 링크 태그로 따로 링크 걸어준다.
+javascipt의 script 태그의 경우에는, 따로 파일로 불러오려고 script 태그 속부분만 지우고 기존의 script 태그 코드를 약간 수정한다.
+
 ```
