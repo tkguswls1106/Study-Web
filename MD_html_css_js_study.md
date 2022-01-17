@@ -234,7 +234,7 @@ javascript로 함수를 만들고 싶다면, body 태그던 head 태그던 상�
 
 객체에 속해있는 함수는 함수라고 하지않고 메소드(method)라고 부른다.
 예를들어 document.querySelector('body')에서 document는 객체이고, querySelector('body')가 메소드이다.
-참고로 coworkers.programmer 여기서 programmer는 함수가 아니기때문에 메소드가 아닌, 프로퍼티 라고 부른다.
+참고로 coworkers.programmer 여기서 programmer는 함수가 아니기때문에 메소드가 아닌, 프로퍼티 라고 부른다. (변수라고 부르면 틀림)
 
 배열은 순서대로 정보를 저장해서 집어넣는 폴더라면,
 반면에 객체는 순서없이 정보를 저장해서 집어넣는 폴더이다. 대신, 그 정보에 대한 이름과 함께 저장한다.
