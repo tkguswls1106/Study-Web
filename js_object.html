@@ -33,6 +33,17 @@
         document.write('--------------- <br>');
       }
     </script>
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function()
+      {
+        for(var key in this)  /* 만약 다른곳에서 coworkers 변수의 이름이 변경될 것을 대비해서 this로 해준다. */
+        {
+          document.write(key + ' : ' + this[key] + '<br>');
+        }
+      }
+      coworkers.showAll();
+    </script>
 
   </body>
 </html>
