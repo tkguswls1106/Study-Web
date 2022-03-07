@@ -42,6 +42,16 @@ if
 elif
 else
 그리고 마지막에 endif라는걸로 조건없이 바로 닫아준다.
+
+<form> 태그: 웹페이지에서의 입력 양식을 의미한다. 밑은 그의 필수적인 속성들이다.
+name: 폼의 이름
+action: 폼 데이터가 전송되는 백엔드 url이며, 서버에 해당 데이터를 전송할 스크립트 파일을 지정한다.
+method: 폼 전송 방식(GET / POST), GET은 url주소에 폼 데이터를 붙여서 보내는 방식이며, POST는 url주소에 폼 데이터가 보이지 않는다.
+예를 들어, 
+<form action="{% url 'result' %}" method="get">
+    <input type="number" name="number"/>
+    <button type="'submit">결과보기</button>
+</form>
 ```
 <hr/><hr/>
 
