@@ -189,6 +189,8 @@ input type="text"로 사용자가 텍스트를 입력할 수 있는 네모 빈�
 placeholder="title"로 그 빈칸 안에 title 이라는 회색글씨로 부가설명을 해주는 말이 적혀있게 된다.
 name="titlename"로 사용자가 입력한 텍스트(데이터)가 나중에 서버로 전송할때는, titlename 이라는 이름으로 전송하게 된다.
 
+<textarea></textarea> 태그는 input type="text" 와 비슷하게 입력할 수 있는 빈칸을 만들어주지만, 여러줄의 문자열을 입력할 수 있다는 차이점이 있다.
+
 사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
 
 웹사이트 검사에서 Elements 오른쪽에 있는 Console 을 클릭하면 거기서 바로 javascript 코드로 웹페이지를 제어할 수 있다.
