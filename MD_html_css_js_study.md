@@ -53,6 +53,11 @@ method: 폼 전송 방식(GET / POST), GET은 url주소에 폼 데이터를 붙�
     <input type="number" name="number"/>
     <button type="'submit">결과보기</button>
 </form>
+
+form태그의 method'를 더 자세히 설명해보자면,
+빈칸에 입력할 내용 입력하고 버튼을 눌러 서버로 해당 입력값을 데이터로 전송했다면,
+method='get' 이었다면 url 오른쪽에 붙는 path에 해당값에 대한 내용이 적히게되어 보안상으로 위험하지만,
+method='post' 이었다면 url 오른쪽에 붙는 path에 해당값에 대한 내용이 적히지않고 숨김처리되고 다른 경로로 데이터가 전송되어 더 안전하다.
 ```
 <hr/><hr/>
 
