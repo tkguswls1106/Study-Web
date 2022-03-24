@@ -182,8 +182,11 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 버튼 만드는 태그는 input 이다.
 그 안에서 type = "button" 을 하면 버튼 모양이 되고, value = "글씨쓰기" 를 하면 그 버튼 안에 글씨를 쓸수 있게된다.
 그리고 onclick = " " 를 사용하면 그안에는 javascript 이벤트(사건) 문법 코드를 적어야한다.
-
 참고로 onclick 온클릭이지 onclick 원클릭이 아니니 헷갈리지 말자! on 관련된 코드가 많다. 예를들어 onclick, onchange, onkeydown 등등이 있다.
+
+<input type="text" placeholder="title"> 은
+input type="text"로 사용자가 텍스트를 입력할 수 있는 네모 빈칸이 만들어지고,
+placeholder="title"로 그 빈칸 안에 title 이라는 회색글씨로 부가설명을 해주는 말이 적혀있게 된다.
 
 사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
 
