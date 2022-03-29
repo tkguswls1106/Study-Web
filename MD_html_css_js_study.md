@@ -51,7 +51,7 @@ method: 폼 전송 방식(GET / POST), GET은 url주소에 폼 데이터를 붙�
 예를 들어, 
 <form action="{% url 'result' %}" method="get">
     <input type="number" name="number"/>
-    <button type="'submit">결과보기</button>
+    <button type="submit">결과보기</button>
 </form>
 
 form태그의 method'를 더 자세히 설명해보자면,
