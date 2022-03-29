@@ -162,6 +162,9 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 
 head 태그 안에서 style 태그를 따로 파일로 빼서 간단하게 한문장으로 다른 위치에 있는 style 태그를 불러와서 실행시키고 싶다면,
 link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식으로 "style.css"부분만 이름 변경해서 적으면 된다.
+
+css flex 부분 정리 사이트: https://wooncloud.tistory.com/10
+css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
 ```
 <hr/><hr/>
 
