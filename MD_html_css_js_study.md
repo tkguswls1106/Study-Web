@@ -209,6 +209,7 @@ name="titlename"로 사용자가 입력한 텍스트(데이터)가 나중에 서
 <input type="submit"> 은 제출이라는 누르는 버튼을 만들어준다.
 
 <textarea></textarea> 태그는 input type="text" 와 비슷하게 입력할 수 있는 빈칸을 만들어주지만, 여러줄의 문자열을 입력할 수 있다는 차이점이 있다.
+input 태그는 <input type = "text" value = "여기"> 이런식으로 적으면 되지만, <textarea>여기</textarea> 태그 사이 안에는 input태그와 다르게 태그 사이에 글을 적어주어야한다.
 
 사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
 
