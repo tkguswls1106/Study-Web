@@ -199,6 +199,7 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 버튼 만드는 태그는 input 이다.
 그 안에서 type = "button" 을 하면 버튼 모양이 되고, value = "글씨쓰기" 를 하면 그 버튼 안에 글씨를 쓸수 있게된다.
 예를들어 value 값에 "가나다"를 넣으면 버튼위에 글씨가 "가나다"라고 쓰여 "가나다"버튼이 된다.
+또는 value 값에 값을 넣어 해당값을 초기화시켜주는 역할도 한다.
 그리고 onclick = " " 를 사용하면 그안에는 javascript 이벤트(사건) 문법 코드를 적어야한다.
 참고로 onclick 온클릭이지 onclick 원클릭이 아니니 헷갈리지 말자! on 관련된 코드가 많다. 예를들어 onclick, onchange, onkeydown 등등이 있다.
 
