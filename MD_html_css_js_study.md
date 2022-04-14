@@ -95,6 +95,9 @@ class = "shj"  여기서 class는 그룹핑하는 용도로 사용한다. " "안
 참고로 만약에 그리드를 이용하여 id 태그를 만들고 그 grid div 태그 안의 다른 태그만 간섭하고싶다면, 예를들어 #grid 가 아닌, #grid ol {} 이런식으로 적으면 된다.
 정리해보자면, 순서 우선권은 id > class(이들 중에서는 마지막꺼가 우선) > 일반 태그 선택자(예를 들어 a)
 
+div와 span의 차이점, 그리고 id와 class의 차이점 설명 사이트:
+https://ohknow.tistory.com/35
+
 style 태그 안의 border는 테두리를 디자인하는 속성이다.
 
 style 태그 안에서 css 주석처리 코드는 /* */ 이다.
