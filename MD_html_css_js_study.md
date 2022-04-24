@@ -66,6 +66,20 @@ GET은 데이터를 가져올때 쓴다. 그러므로 예를들어 링크로 어
 
 form태그 안에서
 <input type="hidden"> 은 눈에 보이진않지만 서버로 데이터를 전송하면 데이터는 전송하는 보이지않는 폼이다.
+
+- html 파일의 틀을 어느정도 적어두겠음 -
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  </title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" type = "text/css" href = "css 파일 이름"/>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+    </body>
+</html>
 ```
 <hr/><hr/>
 
@@ -90,13 +104,36 @@ class = "shj"  여기서 class는 그룹핑하는 용도로 사용한다. " "안
 } 이런식으로 사용한다.
 띄어쓰기로 구분하여 class="sa hj"로 사용하였으면, 사용할때는 .hj {}로 사용한다.
 
+id와 class의 차이는
+id는 단일로만 사용가능하며, #shj 이렇게 콜하고,
+class는 복수로도 사용가능하며, .shj 이렇게 콜한다. 보통 이는 그룹핑해서 같은 class 이름들 부분을 한번에 통제할때 사용한다.
+
+- 특정 태그(선택자) 안의 해당 class만 지정할때에는 예를들어
+strong.red1 {font-size: 12pt}
+- 특정 태그 안의 특정 태그를 지정할때에는 예를들어
+ol li {list-style-type: upper-alpha}
+- 특정 div id 안의 특정 태그를 지정할때에는 예를들어
+#shj ol {}
+- 만약 굳이 필요는 없지만 보기좋게, 특정 class 안의 class 안의 class 를 지정할때에는 예를들어
+.menu .content .comment{ }
+- style 태그 안에 적은 코드중 선택자만 다르고 효과 부분은 같다면, 선택자를 a, b {} 이렇게 묶어서 적어도 된다.
+
 순서가 마지막에있는 선택자에 우선권이 부여되어, 예를들어 여러 색상 속성이 사용되었어도 <style></style>안에 마지막으로 color:blue를 사용했으면 blue색상이 적용된다.
 하지만 순서없이 먼저 우선권을 부여하고싶다면, id="shj"를 이용하고 <style></style>안에서는 #shj {}로 불러온다.
 참고로 만약에 그리드를 이용하여 id 태그를 만들고 그 grid div 태그 안의 다른 태그만 간섭하고싶다면, 예를들어 #grid 가 아닌, #grid ol {} 이런식으로 적으면 된다.
 정리해보자면, 순서 우선권은 id > class(이들 중에서는 마지막꺼가 우선) > 일반 태그 선택자(예를 들어 a)
+따라서 id의 속성은 해당 요소에 부여된 class 속성에 관계 없이 작동한다.
 
 div와 span의 차이점, 그리고 id와 class의 차이점 설명 사이트:
 https://ohknow.tistory.com/35
+
+div는 그룹핑할때 사용하고, 블럭요소로 한줄 범위 전체사용. 표준은 왼쪽으로 정렬이며, 블럭요소지만 width와 height로 겉으로 보이는 박스크기는 조절가능. 하지만 검사해보면 실제 속 범위는 한줄 꽉차있음.
+span은 인라인요소로 해당 범위만 사용하고, 엔터키도 안됨.
+
+html 파일에서 해당 원하는 부분만 따로 css style을 적용시켜주고싶다면,
+<div style="line-height:80%;">
+	<br>
+</div>
 
 style 태그 안의 border는 테두리를 디자인하는 속성이다.
 
@@ -106,6 +143,13 @@ display:inline; 코드는 그 문자 범위에서만 테두리를 적용하고(�
 display:block; 코드는 그 문자 줄 전체로 테두리를 적용한다(화면 전체를 테두리 사용). => 단, 밑부분에 width:100px 코드를 입력하면 가로 테두리 길이가 조정된다.
 display:none; 코드는 해당문자를 사라지게한다.
 참고로 이건 효과 부분에 코드를 작성한다.
+=> strong { display: none; background-color: silver; margin: 10px; padding: 6px; border: 1px solid black; }
++ 추가적으로 display:inline-block;
+display 속성이 inline-block으로 지정된 엘리먼트는 기본적으로 inline 엘리먼트처럼 전후 줄바꿈 없이 한 줄에 다른 엘리먼트들과 나란히 배치된다.
+하지만 inline 엘리먼트에서 불가능하던 width와 height 속성 지정 및 margin과 padding 속성의 상하 간격 지정이 가능해진다.
+inline-block 엘리먼트는 명시적으로 해당 엘리먼트의 스타일을 display: inline-block로 지정해서 선언해줘야 한다.
+inline-block을 이용하면 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치할 수 있기 때문에 레이아웃에 활용할 수 있다.
+그래서 전체를 div로 그룹핑해서 display:inline-block;을 써주고, position으로 레이아웃 하는 방법이 있다.
 
 style 태그 안에 적은 코드중 선택자만 다르고 효과 부분은 같다면, 선택자를 a, b {} 이렇게 묶어서 적어도 된다.
 
@@ -175,9 +219,23 @@ display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 �
 css 코드 내에서 position 속성을 사용하면된다.
 static, absolute, relative, fixed 가 있는데,
 이는 이 사이트에 잘 정리되어있다: https://engkimbs.tistory.com/922
+- position으로 레이아웃 배치 중요한점: absolute 의 기준이 되는 위치는 '가장 가까운 부모 요소 혹은 조상 요소'(즉, 해당 div 를 통틀어 묶고있는 그룹핑 틀 div) 중 position 속성이 relative인 요소이다.
+                                                 그렇기때문에, 레이아웃에서 가장 큰 틀이되는 div를 css로 position:relative;로 해놓고, width와 height 값으로 틀의 박스 크기를 지정해주고,
+	                                     그 안의 레이아웃 요소들의 div를 모두 같은 이름의 class 이름으로 지정해주고, 그 class의 css를 position:absolute;로 해두면,
+	                                     이제 그 relative인 border의 큰 틀 안에서 틀의 border 부분을 기준으로 상대적으로 레이아웃 위치 조절이 가능해진다.
+	                                     여기서 꿀팁은 안의 레이아웃 요소들의 div를 모두 다른 id로 선언해주어, css 에서 각자 id마다 #box1{top:0; left:0;}, #box2{bottom: 0; left: 0;} 이런식으로 위치 조절을 해주는것이 편리하고 좋을것이다.
+참고로 top, left, right, bottom은 그 기준으로부터 '얼마만큼 떨어졌나'를 나타낸 것이다.
 
 head 태그 안에서 style 태그를 따로 파일로 빼서 간단하게 한문장으로 다른 위치에 있는 style 태그를 불러와서 실행시키고 싶다면,
 link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식으로 "style.css"부분만 이름 변경해서 적으면 된다.
+
+참고로 플로팅박스를 이용한 div 레이아웃 배치의 꿀팁은, 표준 왼쪽 기준이라는 것을 명심하며,
+먼저 이쁘게 사각으로 묶을 것들을 한번에 그룹핑하여 그것에 전부 첫번째 div 태그로 감싸주고 class로 이름붙여줌.
+그리고 그 첫번째 div 태그의 크기를 width와 height로 조절해주면, 나머지 그 안에 들어갈 나머지 박스들도 다 따로따로 div로 묶고 class로 이름 각자 붙여줌.
+그리고 .menu {float:left} 처럼 플로팅박스를 지정하여 겉박스 크기를 맞춰주면 된다.
+만약 플로팅박스를 안해주고 div 그대로 쓴다면, width와 height로 div 크기를 조절했다고해도, 실제 속값은 한줄 전체이기때문에,
+그 큰틀 div 안에 들어갈 다른 div 들이 한줄 엔터되어 적힘.
+그렇기에 플로팅으로 왼쪽정렬 해준다면, 박스 겉크기에 맞춰서 이쁘게 옆으로 붙어서 정렬될것임. 부수적인 div들은 플로팅박스 안해도 표준정렬으로 예쁘게 따닥따닥 붙음.
 
 css flex 부분 정리 사이트: https://wooncloud.tistory.com/10
 css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
