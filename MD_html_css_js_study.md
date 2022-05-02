@@ -267,7 +267,7 @@ body 태그안에 <script> </script> 태그로 javascript 코드를 안에 넣�
 예를들어 value 값에 "가나다"를 넣으면 버튼위에 글씨가 "가나다"라고 쓰여 "가나다"버튼이 된다.
 또는 value 값에 값을 넣어 해당값을 초기화시켜주는 역할도 한다.
 그리고 onclick = " " 를 사용하면 그안에는 javascript 이벤트(사건) 문법 코드를 적어야한다.
-참고로 onclick 온클릭이지 onclick 원클릭이 아니니 헷갈리지 말자! on 관련된 코드가 많다. 예를들어 onclick, onchange, onkeydown 등등이 있다.
+참고로 onclick 온클릭이지 oneclick 원클릭이 아니니 헷갈리지 말자! on 관련된 코드가 많다. 예를들어 onclick, onchange, onkeydown 등등이 있다.
 
 <input type="text" name="titlename" placeholder="title"> 은
 input type="text"로 사용자가 텍스트를 입력할 수 있는 네모 빈칸이 만들어지고,
