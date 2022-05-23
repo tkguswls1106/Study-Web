@@ -252,6 +252,9 @@ css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
 
 참고로 JavaScript랑 JS랑 같은 말이다.
 
+JavaScript 코드인 <script>태그 코드는 <head>태그 안에 적어주면된다.
+그리고 <body>태그 안에 코드를 안만들어주면 <head>태그에 JavaScript 코드를 아무리 열심히적어줬다한들 아무것도 실행이 되지않는다.
+
 /*
 예를들어 <body style = " "> 태그로 상호작용시 일어날 디자인 변경의 css 코드를 적어주고,
 그 body 태그 안에 관련 javascript 코드를 적어주면, 해당 상호작용에 따라 css 코드에 적힌대로 디자인이 변경된다.
