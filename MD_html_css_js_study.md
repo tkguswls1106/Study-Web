@@ -282,6 +282,10 @@ name="titlename"로 사용자가 입력한 텍스트(데이터)가 나중에 서
 <textarea></textarea> 태그는 input type="text" 와 비슷하게 입력할 수 있는 빈칸을 만들어주지만, 여러줄의 문자열을 입력할 수 있다는 차이점이 있다.
 input 태그는 <input type = "text" value = "여기"> 이런식으로 적으면 되지만, <textarea>여기</textarea> 태그 사이 안에는 input태그와 다르게 태그 사이에 글을 적어주어야한다.
 
+label 태그는
+label 태그의 for과, input 태그의 id 를 활용하여 연계할 수 있는 기능이 있기도 하며,
+label 태그로 input 태그 까지 묶어버리고 for이나 id없이 그냥 텍스트만 적는다면, 텍스트를 선택해도 input 태그의 폼양식이 선택되는 기능을 구현할 수 있다. 즉, <label> 요소는 브라우저에 의해 일반적인 텍스트로 랜더링되지만, 사용자가 마우스로 해당 텍스트를 클릭할 경우 <label> 요소와 연결된 요소를 곧바로 선택할 수 있어 사용자의 편의성을 높일 수 있다는 것이다.
+
 사용자가 어떤 키를 눌렀을 때 이벤트가 발생하게 하고 싶을떄 구글링 예: javascript keydown event attribute
 
 웹사이트 검사에서 Elements 오른쪽에 있는 Console 을 클릭하면 거기서 바로 javascript 코드로 웹페이지를 제어할 수 있다.
