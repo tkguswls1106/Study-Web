@@ -366,6 +366,42 @@ coworkers.data scientist 이렇게는 사용이 불가능하다는 것이다.
 
 객체에 메소드 안에는 함수를 넣을수도 있다.
 
+------------------------
+-- 리액트 공부하다가 가져옴 --
+
+자바스크립트에서의 객체와 배열 설명 참고 사이트:
+https://www.zerocho.com/category/JavaScript/post/572c6f759a5f1c4db2481ee3
+
+배열은 선언할때 [] 사용.
+객체는 선언할때 {} 사용.
+
+객체 예시로
+var hello = {
+  firstName: 'Zero',  // 'firstName': 'Zero' 도 가능함. 그러면 호출할때 hello['firstName']과 hello.firstName 모두 가능함. 키에 띄어쓰기 없으면 웬만하면 마침표 방법으로 호출함.
+  lastName: 'Cho',  // 'lastName': 'Zero' 도 가능함. 그러면 호출할때 hello['lastName']과 hello.lastName 모두 가능함. 키에 띄어쓰기 없으면 웬만하면 마침표 방법으로 호출함.
+  'other Name': 'shj'  // 키에 띄어쓰기 있으므로 other Name: 'shj' 은 불가능함. 그러면 호출할때 hello['other Name'] 으로만 가능함. 마침표 호출방법은 불가능함.
+};
+
+map메소드는 배열에서 사용하므로, 이를 응용하면
+배열 안의 각 인덱스에 속해있는 객체를 꺼내 사용할 수 있다.
+예시로
+const students = [
+    {
+        id: 1,
+        name: "Inje",
+    },
+    {
+        id: 2,
+        name: "Steve",
+    },
+];
+이처럼 배열[]안에 객체{}가 들어있다면, 배열student를 map메소드로 돌려 각 객체를 뽑아 사용 가능하다. 그 예시로
+students.map( (student) => {return <li key={student.id}>{student.name}</li>;} )
+이런식으로 말이다.
+꼭 괄호생김새를 잘 구분하자.
+
+------------------------
+
 css의 style 태그와 javacript의 script 태그를 따로 파일로 빼서 링크를 걸어줄때는 둘이 차이점이 있다.
 css의 style 태그의 경우에는, 따로 파일로 불러오려고 style 태그와 속부분까지 모두 지우고, 대신 링크 태그로 따로 링크 걸어준다.
 javascipt의 script 태그의 경우에는, 따로 파일로 불러오려고 script 태그 속부분만 지우고 기존의 script 태그 코드를 약간 수정한다.
