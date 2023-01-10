@@ -188,7 +188,7 @@ style 태그 안의 선택자 안의 효과 코드 부분중에서 중복되는 
 border-width:5px;
 border-color:red;
 border-style: solid; 이거를
-border:5px red solid; 이렇게 바꿔서 적을수 있다.
+border:5px red solid; 이렇게 바꿔서 적을수 있다. 아마 순서 바뀌어도 상관없는듯?하다.
 참고로 solid는 점선 이런게아닌 단선을 의미한다.
 border-bottom 으로 사용하면 테두리가 사각형이 아닌, 밑부분에 선으로만 테두리가 만들어진다. 비슷한 방식으로 bottom 대신 right 등등도 사용 가능하다.
 
@@ -269,8 +269,16 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 그렇기에 플로팅으로 왼쪽정렬 해준다면, 박스 겉크기에 맞춰서 이쁘게 옆으로 붙어서 정렬될것임. 부수적인 div들은 플로팅박스 안해도 표준정렬으로 예쁘게 따닥따닥 붙음.
 
 css flex 부분 정리 사이트: https://wooncloud.tistory.com/10
-https://www.w3schools.com/css/css3_flexbox_container.asp#flex-direction
+	https://www.w3schools.com/css/css3_flexbox_container.asp#flex-direction
 css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
+
+font-size 단위 및 반응형웹디자인 정리 사이트:
+https://mber.tistory.com/48
+https://ossam5.tistory.com/310
+
+아마 요즘은
+flexbox로 레이아웃 만들고,
+약간의 미디어 쿼리와 font-size의 단위를 rem을 사용함으로써 반응형 웹디자인을 한다고 한다.
 ```
 <hr/><hr/>
 
