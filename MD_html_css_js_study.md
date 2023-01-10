@@ -110,6 +110,10 @@ class는 복수로도 사용가능하며, .shj 이렇게 콜한다. 보통 이�
 
 - 특정 태그(선택자) 안의 해당 class만 지정할때에는 예를들어
 strong.red1 {font-size: 12pt}
+=> !!! 근데이거 다시 찾아보니, strong.red1{} 이거이면 strong 선택자 태그중 class="red1"으로 지정된 부분을 건드리는것이다.
+예를들어 <strong class="red1">가나다</strong> 의 가나다 부분 말이다. !!!
+=> !!! 마찬가지로 id도 마찬가지이다. strong#red1{} 이거이면 strong 선택자 태그중 id="red1"으로 지정된 부분을 건드리는것이다.
+예를들어 <strong id="red1">가나다</strong> 의 가나다 부분 말이다. !!!
 - 특정 태그 안의 특정 태그를 지정할때에는 예를들어
 ol li {list-style-type: upper-alpha}
 - 특정 div id 안의 특정 태그를 지정할때에는 예를들어
