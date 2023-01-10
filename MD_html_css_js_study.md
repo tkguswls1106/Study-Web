@@ -105,6 +105,9 @@ a {
 button:hover { }
 이는 참고로 마우스가 해당 위치에 올려져있을때 동작한다.
 
+div { visibility: visible; } 이면, 화면에 보이는 요소이다.
+div { visibility: hidden; } 이면, 화면에 눈으로는 안보이지만 화면의 영역은 그대로 차지하는 요소이다.
+
 class = "shj"  여기서 class는 그룹핑하는 용도로 사용한다. " "안의 값은 원하는걸로 변경가능. 강사는 "active"를 사용함.
 사용할때는 .shj {
 } 이런식으로 사용한다.
@@ -167,7 +170,7 @@ style 태그 안에서 css 주석처리 코드는 /* */ 이다.
 
 display:inline; 코드는 그 문자 범위에서만 테두리를 적용하고(자신의 크기만큼 테두리 사용),
 display:block; 코드는 그 문자 줄 전체로 테두리를 적용한다(화면 전체를 테두리 사용). => 단, 밑부분에 width:100px 코드를 입력하면 가로 테두리 길이가 조정된다.
-display:none; 코드는 해당문자를 사라지게한다.
+display:none; 코드는 해당문자를 사라지게한다. 단, 겉으로만 숨겨지는거지 실제론 존재하기때문에, 기본값으로 이것이 설정된 <script>태그처럼 js코드를 삽입할때 사용하기도 한다.
 참고로 이건 효과 부분에 코드를 작성한다.
 => strong { display: none; background-color: silver; margin: 10px; padding: 6px; border: 1px solid black; }
 + 추가적으로 display:inline-block;
@@ -177,7 +180,9 @@ inline-block 엘리먼트는 명시적으로 해당 엘리먼트의 스타일을
 inline-block을 이용하면 여러 개의 엘리먼트를 한 줄에 정확히 원하는 너비만큼 배치할 수 있기 때문에 레이아웃에 활용할 수 있다.
 그래서 전체를 div로 그룹핑해서 display:inline-block;을 써주고, position으로 레이아웃 하는 방법이 있다.
 
-style 태그 안에 적은 코드중 선택자만 다르고 효과 부분은 같다면, 선택자를 a, b {} 이렇게 묶어서 적어도 된다.
+display:none;이 기본값으로 탑재된 태그 예시: <script>태그
+display:block;이 기본값으로 탑재된 태그 예시: <p>태그, <div>태그, <h1>~<h6>태그
+display:inline;이 기본값으로 탑재된 태그 예시: <span>태그
 
 style 태그 안의 선택자 안의 효과 코드 부분중에서 중복되는 부분이 있다면, 예를들어
 border-width:5px;
@@ -215,7 +220,7 @@ div 태그는 기본적으로 block level element 이기 때문에 화면 전체
 
 예를들어 바디 부분에 div 엄마 태그로 NAVIGATION과 ARTICLE을 묶고 난뒤에 헤드 부분의 스타일 태그 부분에서
 display:grid;와 grid-template-columns: 150px 1fr; 을 적어주면, 첫번째 컬럼인 NAVIGATION은 150px 크기로 변동없이 유지되고,
-두번째 컬럼인 ARTICLE은 1fr이므로 사용자가  홈페이지 크기를 늘렸다 줄였다해도 그 최대 크기에 맞춰서 변동성을 가지고 크기가 줄었다 커졌다 한다.
+두번째 컬럼인 ARTICLE은 1fr이므로 사용자가 홈페이지 크기를 늘렸다 줄였다해도 그 최대 크기에 맞춰서 변동성을 가지고 크기가 줄었다 커졌다 한다.
 만약에 grid-template-columns: 2fr 1fr; 로 적게되면, NAVIGATION과 ARTICLE이 2:1 비율로 늘었다 줄었다하며 크기가 변동성을 가지게 된다.
 
 미디어 쿼리는 여러가지 화면의 특성들에 따라서 어떠한 조건을 만족할 때에만 이 css의 내용이 동작하게 하는 것이다.
@@ -264,6 +269,7 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 그렇기에 플로팅으로 왼쪽정렬 해준다면, 박스 겉크기에 맞춰서 이쁘게 옆으로 붙어서 정렬될것임. 부수적인 div들은 플로팅박스 안해도 표준정렬으로 예쁘게 따닥따닥 붙음.
 
 css flex 부분 정리 사이트: https://wooncloud.tistory.com/10
+https://www.w3schools.com/css/css3_flexbox_container.asp#flex-direction
 css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
 ```
 <hr/><hr/>
