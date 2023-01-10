@@ -99,6 +99,12 @@ a {
 구글링 예: css text size property(속성)
 	 css text center(가운데정렬) property
 
+* { } 쓰면 Universal selector 로써, 전체 모든 부분에 적용시키는 css 선택자가 된다. 근데 보통 그런경우 body 태그를 활용한다.
+
+상태와 관련된 selector를 사용한 예시로는,
+button:hover { }
+이는 참고로 마우스가 해당 위치에 올려져있을때 동작한다.
+
 class = "shj"  여기서 class는 그룹핑하는 용도로 사용한다. " "안의 값은 원하는걸로 변경가능. 강사는 "active"를 사용함.
 사용할때는 .shj {
 } 이런식으로 사용한다.
@@ -121,6 +127,22 @@ ol li {list-style-type: upper-alpha}
 - 만약 굳이 필요는 없지만 보기좋게, 특정 class 안의 class 안의 class 를 지정할때에는 예를들어
 .menu .content .comment{ }
 - style 태그 안에 적은 코드중 선택자만 다르고 효과 부분은 같다면, 선택자를 a, b {} 이렇게 묶어서 적어도 된다.
+
+css 다중 선택자와 css 클래스명 띄어쓰기 정리 사이트:
+https://ppoote.tistory.com/127
+이를 정리하면,
+1. 공백없이 클래스끼리 붙어있는 경우
+.name1.name2{}
+클래스 속성 내에 name1과 name2가 모두 설정된 모든 요소를 ​​선택한다.
+2. 쉼표가 있는 경우
+h1, h2, h3, h4, h5, h6 { font-family: helvetica; }
+css 선택자 목록(,)은 일치하는 모든 요소를 선택한다.
+3. 공백으로 연결해서 사용하면 '하위 개체'로 지정함.
+.a .b .c{}
+a클래스 내부 하위의 b클래스 내부 하위의 c클래스요소에만 스타일 적용한다.
+4. class에서 띄어쓰기의 의미
+<div class="park one">park 1</p>
+park와 one 두 클래스를 다 가지게 된다. 왜냐하면 class 이름에 공백은 허용되지않기 때문이다.
 
 순서가 마지막에있는 선택자에 우선권이 부여되어, 예를들어 여러 색상 속성이 사용되었어도 <style></style>안에 마지막으로 color:blue를 사용했으면 blue색상이 적용된다.
 하지만 순서없이 먼저 우선권을 부여하고싶다면, id="shj"를 이용하고 <style></style>안에서는 #shj {}로 불러온다.
