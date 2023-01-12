@@ -276,6 +276,8 @@ font-size 단위 및 반응형웹디자인 정리 사이트:
 https://mber.tistory.com/48
 https://ossam5.tistory.com/310
 
+참고로 HTML 태그의 기본 폰트 사이즈는 16px 이다.
+
 아마 요즘은
 flexbox로 레이아웃 만들고,
 약간의 미디어 쿼리와 font-size의 단위를 rem을 사용함으로써 반응형 웹디자인을 한다고 한다.
