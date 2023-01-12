@@ -276,7 +276,7 @@ font-size 단위 및 반응형웹디자인 정리 사이트:
 https://mber.tistory.com/48
 https://ossam5.tistory.com/310
 
-참고로 HTML 태그의 기본 폰트 사이즈는 16px 이다.
+참고로 <html> 태그의 기본설정된 폰트 사이즈는 16px 이다.
 
 아마 요즘은
 flexbox로 레이아웃 만들고,
