@@ -281,6 +281,14 @@ https://ossam5.tistory.com/310
 아마 요즘은
 flexbox로 레이아웃 만들고,
 약간의 미디어 쿼리와 font-size의 단위를 rem을 사용함으로써 반응형 웹디자인을 한다고 한다.
+
+- 기타 설명자료 -
+- calc()란?: https://webisfree.com/2016-08-05/%EB%B0%98%EC%9D%91%ED%98%95%EC%9B%B9-%EA%B5%AC%EC%B6%95%EC%8B%9C-css-calc()-%ED%99%9C%EC%9A%A9%ED%8C%81
+- css 자식 후손 선택자 설명1(2에 이어서계속): https://velog.io/@jt_include_rw/CSS%EC%9E%90%EC%8B%9D-%ED%9B%84%EC%86%90-%EC%84%A0%ED%83%9D%EC%9E%90-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%9D%B4%EA%B1%B4-%EB%AD%90%EB%9D%BC%EA%B3%A0-%EB%B6%80%EB%A5%B4%EB%82%98%EC%9A%94
+- css 자식 후손 선택자 설명2(이어서): https://velog.io/@jt_include_rw/styled-component%EC%97%90%EC%84%9C%EC%9D%98-%ED%9B%84%EC%86%90-%EC%9E%90%EC%8B%9D-%EC%84%A0%ED%83%9D%EC%9E%90
+- css 인접 형제 선택자(+)와 일반 형제 선택자(~): https://www.nextree.co.kr/p8468/
+- & > * { } 의미는?: &는 현재 태그를 의미하고, *는 전체를 의미하므로, & > * 는 현재 태그에 한단계 밑부분 전체의 자식 선택자 태그들을 범위로 지정한것이다.
+- & > * { :not(:last-child) {margin-bottom: 16px;} } 의미는?: & > * 는 현재 태그에 한단계 밑부분 전체의 자식 선택자 태그들중에서 가장 마지막 자식 선택자를 제외한 모든 자식 태그들을 범위로 지정한것이다.
 ```
 <hr/><hr/>
 
