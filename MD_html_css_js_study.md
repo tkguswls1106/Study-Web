@@ -200,6 +200,11 @@ padding-left: 55px;는 패딩값을 왼쪽으로부터 55px 떨어지게 만듦.
 예를들어 margin:0px; 을 적으면 두 테두리의 간격없이 딱붙어버린다.
 장사를 하면 마진이 남는다. 이를 이용해서 margin 속성을 이해하자.
 
+CSS에서 margin 및 padding 속성 한줄로 적을때 순서 설명 사이트:
+https://tagilog.tistory.com/1202
+이거랑
+https://velog.io/@jongsunpark88/%EC%86%8D%EC%84%B1%EA%B0%92attribute-value-%EA%B0%AF%EC%88%98%EA%B0%80-4%EA%B0%9C-3%EA%B0%9C-2%EA%B0%9C
+
 여백 관련 속성 총정리: ■는 테두리
 ■■■■■■■ border ■■■■■■■
 ■       padding      ■
