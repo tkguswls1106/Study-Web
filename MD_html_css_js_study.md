@@ -273,8 +273,10 @@ link 태그를 사용하여 <link rel="stylesheet" href="style.css"> 이런식�
 그 큰틀 div 안에 들어갈 다른 div 들이 한줄 엔터되어 적힘.
 그렇기에 플로팅으로 왼쪽정렬 해준다면, 박스 겉크기에 맞춰서 이쁘게 옆으로 붙어서 정렬될것임. 부수적인 div들은 플로팅박스 안해도 표준정렬으로 예쁘게 따닥따닥 붙음.
 
+참고로 flex 사용할때에 flex-container와 flex-item 의 역할과 사용법이 다르니 헷갈리지말고 잘살펴보자! 아마 가능한한 3번째 사이트가 유용할것임.
 css flex 부분 정리 사이트: https://wooncloud.tistory.com/10
 	https://www.w3schools.com/css/css3_flexbox_container.asp#flex-direction
+	https://www.daleseo.com/css-flexbox/
 css flex 부분 연습 사이트: https://flexboxfroggy.com/#ko
 
 font-size 단위 및 반응형웹디자인 정리 사이트:
